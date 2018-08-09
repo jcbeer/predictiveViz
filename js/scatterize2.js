@@ -668,12 +668,12 @@ var S2 = function ($, d3) {
 
       highlight_idx = my.highlight_control.val();
       if (highlight_idx !== "") {
-        opts.h = highlight_idx;
+        //opts.h = highlight_idx;
       }
 
     filter_idx = my.filter_control.val();
     if (filter_idx !== "") {
-      opts.f = filter_idx;
+      //opts.f = filter_idx;
     }
 
     my.x_labels = my.x_labels_control.val().trim();
@@ -787,12 +787,12 @@ var S2 = function ($, d3) {
       cur_state = $.bbq.getState();
       my.x_control.val(cur_state.x);
       my.y_control.val(cur_state.y);
-      my.x_labels_control.val(cur_state.xl || "");
-      my.y_labels_control.val(cur_state.yl || "");
-      my.filter_control.val(cur_state.f || "");
-      my.highlight_control.val(cur_state.h || "");
-      my.model_control.val(cur_state.m);
-      my.populate_nuisance_lists();
+      //my.x_labels_control.val(cur_state.xl || "");
+      //my.y_labels_control.val(cur_state.yl || "");
+      //my.filter_control.val(cur_state.f || "");
+      //my.highlight_control.val(cur_state.h || "");
+      //my.model_control.val(cur_state.m);
+      //my.populate_nuisance_lists();
       cstr = cur_state.c || "";
       clist = [];
       if (cstr !== "") {
@@ -853,8 +853,8 @@ var S2 = function ($, d3) {
     };
 
     my.set_keyboard_shortcuts = function() {
-      my.key('j', function() { my.advance_select(my.y_control, false); });
-      my.key('k', function() { my.advance_select(my.y_control, true); });
+      my.key(',', function() { my.advance_select(my.y_control, false); });
+      my.key('.', function() { my.advance_select(my.y_control, true); });
       my.key('u', function() { my.advance_select(my.x_control, false); });
       my.key('i', function() { my.advance_select(my.x_control, true); });
       my.key('o', function() { my.advance_select(my.model_control, false); });
