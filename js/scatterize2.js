@@ -778,7 +778,7 @@ var S2 = function ($, d3) {
     };
 
     my.populate_select(my.x_control, my.columns, 0);
-    my.populate_select(my.y_control, my.columns, 0);
+    my.populate_select(my.y_control, my.columns, 1);
 
     pub.update_controls = function() {
       // Update the controls on the page and our internal tracking of
