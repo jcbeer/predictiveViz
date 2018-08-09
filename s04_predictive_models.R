@@ -99,9 +99,14 @@ stats[,5] <- apply(predicted_y[,2:dim(predicted_y)[2]], 2, function(x) coef(lm(x
 stats[,6] <- apply(predicted_y[,2:dim(predicted_y)[2]], 2, function(x) coef(lm(x ~ predicted_y[,1]))[2])
 stats[,7] <- apply(predicted_y[,2:dim(predicted_y)[2]], 2, function(x) sqrt(mean((x - predicted_y[,1])^2)))
 stats[,8] <- apply(predicted_y[,2:dim(predicted_y)[2]], 2, function(x) mean(abs((x - predicted_y[,1]))))
+# transpose
+stats <- t(stats)
 
 # SAVE DATA
-write.table(coefs, '/Users/Psyche/neurohack2018/predictiveViz/data/coefficients.csv', row.names = FALSE, col.names = FALSE, sep=',', na='')
-write.table(predicted_y, '/Users/Psyche/neurohack2018/predictiveViz/data/predicted_y.csv', row.names = FALSE, col.names = FALSE, sep=',', na='')
-write.table(stats, '/Users/Psyche/neurohack2018/predictiveViz/data/stats.csv', row.names = FALSE, col.names = FALSE, sep=',', na='')
-
+column_names <- paste0('(', alpha_sequence, ', ', round(lambda_sequence, 2), ')')
+colnames(coefs) <- column_names
+colnames(stats) <- column_names
+colnames(predicted_y) <- c('actual SRS', column_names)
+write.table(coefs, '/Users/Psyche/neurohack2018/predictiveViz/data/coefficients.csv', row.names = FALSE, col.names = TRUE, sep=',', na='')
+write.table(predicted_y, '/Users/Psyche/neurohack2018/predictiveViz/data/predicted_y.csv', row.names = FALSE, col.names = TRUE, sep=',', na='')
+write.table(stats, '/Users/Psyche/neurohack2018/predictiveViz/data/stats.csv', row.names = FALSE, col.names = TRUE, sep=',', na='')
