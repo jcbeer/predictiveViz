@@ -17,13 +17,34 @@
     	<script type="text/javascript">
 var params = [];
 params["images"] = ["data/MNI152_2009_template.nii.gz", "data/coefs.nii.gz"];
+params["fullScreen"] = false;
+params["kioskMode"] = false;
 </script>
+
+<style type="text/css">
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.papaya-container {
+    background-color: #ccffff;
+}
+
+.scatter {
+    background-color: #ffccff;
+} 
+</style>
 
 	</head>
 
 	<body>
 		
-		<div class="papaya" data-params="params"></div>
-		
+        <div class="container">
+            <div class="papaya-container">
+                <div class="papaya" data-params="params"></div>
+            </div>
+            <div class="scatter"> scatterplot goes here</div>
+        </div>
 	</body>
 </html>
