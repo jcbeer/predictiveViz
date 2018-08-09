@@ -600,7 +600,7 @@ var S2 = function ($, d3) {
     my.populate_select = function(control, list, initial_index) {
       var i;
       if (!initial_index) { initial_index = 0; }
-      for (i = 0; i < list.length; i += 1) {
+      for (i = initial_index; i < list.length; i += 1) {
         control.append('<option value="'+i+'">'+list[i]+'</option>');
       }
       control.val(initial_index);
@@ -778,7 +778,7 @@ var S2 = function ($, d3) {
     };
 
     my.populate_select(my.x_control, my.columns, 0);
-    my.populate_select(my.y_control, my.columns.slice(1), 0);
+    my.populate_select(my.y_control, my.columns, 0);
 
     pub.update_controls = function() {
       // Update the controls on the page and our internal tracking of
