@@ -93,7 +93,8 @@ var Sdata = {};
 }
 
 h1 {
-
+    font-family: "Arial";
+    font-size: 20px;
 }
 </style>
 
@@ -102,9 +103,11 @@ h1 {
 	<body>
 		
         <div class="container">
-            <h1>title 1
+            <h1> Estimated Coefficients </br>
+                <small> Training data (n=175) </small>
             </h1>
-            <h1>title 2
+            <h1> Predicted vs. Actual Social Responsiveness Scale Score </br>
+                <small> Test data (n=44) </small>
             </h1>
             <h1>
             </h1>
@@ -119,7 +122,7 @@ h1 {
             </div>
             <div class="stats_and_controls">
                 <div id="controls">
-                    <label for="y_col">Y</label>
+                    <label for="y_col"> <b>(alpha, lambda)</b></label>
                     <select id="y_col"> </select>
                 </div>
                 <div id="summary_stats">

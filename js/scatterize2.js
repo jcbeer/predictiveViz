@@ -891,8 +891,8 @@ var S2 = function ($, d3) {
       });
       my.stats_container.append('div')
         .attr('class', 'warning')
-        .text('Stats code not (yet) thoroughly validated. Double-check values '+
-          'before publishing!');
+        //.text('Stats code not (yet) thoroughly validated. Double-check values '+
+        //  'before publishing!');
     };
 
     pub.my = my;
