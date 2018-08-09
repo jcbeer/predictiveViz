@@ -803,6 +803,7 @@ var S2 = function ($, d3) {
 
     pub.json_url = function() {
       var s = $.bbq.getState();
+      s.y = s.y || 1;
       s.at = my.asset_tag;
       return $.param.querystring(my.base_url, s, 2);
     };
