@@ -23,7 +23,7 @@
 var params = [];
 params["images"] = ["data/MNI152_2009_template.nii.gz", "data/coefs.nii.gz"];
 params["fullScreen"] = false;
-params["kioskMode"] = false;
+params["kioskMode"] = true;
 </script>
 
 <script type="text/javascript">
@@ -87,6 +87,14 @@ var Sdata = {};
 .stats_and_controls {
     background-color: #ffcccc;
 }
+
+.hidden_crap {
+    visibility: hidden;
+}
+
+h1 {
+
+}
 </style>
 
 	</head>
@@ -94,6 +102,12 @@ var Sdata = {};
 	<body>
 		
         <div class="container">
+            <h1>title 1
+            </h1>
+            <h1>title 2
+            </h1>
+            <h1>
+            </h1>
             <div class="papaya-container">
                 <div class="papaya" data-params="params"></div>
             </div>
@@ -112,7 +126,7 @@ var Sdata = {};
                 </div>
             </div>
         </div>
-        <div id="hidden_crap">
+        <div class="hidden_crap">
             <select id="x_col" name="x_col"> </select>
             <input type="text" id="x_ticks" name="x_ticks" />
             <input type="text" id="y_ticks" name="y_ticks" />
