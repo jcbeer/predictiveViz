@@ -1,5 +1,5 @@
 # PredictiveViz
-## Interactive predictive model visualization
+## [Interactive predictive model visualization](https://jcbeer.github.io/predictiveViz/)
 
 This code creates a visualization of predictive model using data from the [ABIDE preprocessed functional MRI resting state dataset](http://preprocessed-connectomes-project.org/abide/). The visualization is available at https://jcbeer.github.io/predictiveViz/. 
 
