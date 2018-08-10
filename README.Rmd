@@ -1,15 +1,6 @@
----
-title: "PredictiveViz"
-# author: "J. C. Beer"
-date: "August 10, 2018"
-output: html_document
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
+# PredictiveViz
 ## Interactive predictive model visualization
+
 This code creates a visualization of predictive model using data from the [ABIDE preprocessed functional MRI resting state dataset](http://preprocessed-connectomes-project.org/abide/). The visualization is available at https://jcbeer.github.io/predictiveViz/. 
 
 The goal of the visualization is to illustrate how the predictive map and prediction accuracy change as a function of the alpha and lambda tuning parameters of the elastic net estimator.
