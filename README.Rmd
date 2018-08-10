@@ -12,8 +12,8 @@ The visualization is based on code from [scatterize](https://github.com/njvack/s
 It also uses the [Papaya medical image viewer](http://rii-mango.github.io/Papaya/), with code and documentation available [here](https://github.com/rii-mango/Papaya).
 
 
-![](figures/abide_data.png "ABIDE data"){width=50%}
+![](figures/abide_data.png "ABIDE data")
 
-![](figures/multivariate_approach.png ""){width=50%}
+![](figures/multivariate_approach.png "")
 
-![](figures/elastic_net.png ""){width=50%}
+![](figures/elastic_net.png "")
