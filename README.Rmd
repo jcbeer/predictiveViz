@@ -1,0 +1,25 @@
+---
+title: "PredictiveViz"
+# author: "J. C. Beer"
+date: "August 10, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Interactive predictive model visualization
+This code creates a visualization of predictive model using data from the [ABIDE preprocessed functional MRI resting state dataset](http://preprocessed-connectomes-project.org/abide/). The visualization is available at https://jcbeer.github.io/predictiveViz/. 
+
+The goal of the visualization is to illustrate how the predictive map and prediction accuracy change as a function of the alpha and lambda tuning parameters of the elastic net estimator.
+
+This data was also used in [this structured sparse regression methodology project](https://github.com/jcbeer/fsgl). 
+
+The visualization is based on code from [scatterize](https://github.com/njvack/scatterize/). You can upload a CSV file to scatterize [here](http://webtasks.keck.waisman.wisc.edu/scatterize).
+
+It also uses the [Papaya medical image viewer](http://rii-mango.github.io/Papaya/), with code and documentation available [here](https://github.com/rii-mango/Papaya).
+
+
+
+
