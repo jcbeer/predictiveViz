@@ -5,6 +5,12 @@ This code creates a visualization of predictive model using data from the [ABIDE
 
 The goal of the visualization is to illustrate how the predictive map and prediction accuracy change as a function of the alpha and lambda tuning parameters of the elastic net estimator.
 
+![ABIDE data](https://github.com/jcbeer/predictiveViz/tree/master/figures/abide_data.png "ABIDE data")
+
+![Multivariate approach](https://github.com/jcbeer/predictiveViz/tree/master/figures/multivariate_approach.png "")
+
+![Elastic net](https://github.com/jcbeer/predictiveViz/tree/master/figures/elastic_net.png "")
+
 This data was also used in [this structured sparse regression methodology project](https://github.com/jcbeer/fsgl). 
 
 The visualization is based on code from [scatterize](https://github.com/njvack/scatterize/). You can upload a CSV file to scatterize [here](http://webtasks.keck.waisman.wisc.edu/scatterize).
