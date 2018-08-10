@@ -92,6 +92,11 @@ var Sdata = {};
     visibility: hidden;
 }
 
+.keyboard_shortcuts {
+    font-family: "Arial";
+    font-size: 18px;
+}
+
 h1 {
     font-family: "Arial";
     font-size: 22px;
@@ -103,7 +108,7 @@ h1 {
 	<body>
 		
         <div class="container">
-            <h1> Estimated Coefficients </br>
+            <h1> Estimated Weights </br>
                 <small> Training data (n=175) </small>
             </h1>
             <h1> Predicted vs. Actual Social Responsiveness Scale Score </br>
@@ -112,7 +117,7 @@ h1 {
             <h1>
             </h1>
             <div class="papaya-container">
-                <div class="papaya" data-params="params"></div>
+                <div class="papaya" data-params="params"></div> 
             </div>
             <div class="scatterframe"> 
                 <div id="scatterplot">
@@ -139,6 +144,13 @@ h1 {
             <option value="OLS" selected="selected"> OLS </option></select>
 
             <a href="#" id="download_link"></a>
+        </div>
+        <div class="keyboard_shortcuts">
+            <!-- </br> --> 
+            <b> Keyboard shortcuts </b> 
+            </br> Use '>' and '<' to cycle through (alpha, lambda) combinations. 
+            </br> Click on scatterplot points to censor from regression.  
+            </br> Press 'c' to toggle data censoring.  
         </div>
 	</body>
 </html>
